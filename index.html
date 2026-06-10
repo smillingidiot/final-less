@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta name="description" content="portfolio about artwork" />
+    <meta name="keywords" content="artist, creative, portfolio, art" />
+    <meta name="author" content="mariami" />
+
+    <meta property="og:title" content="Artena Portfolio" />
+    <meta property="og:description" content="this is an portfolio of the young artist" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/rest.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <img src="./img/download.svg" alt="" />
+      <img src="./" alt="" />
+      <i class="fa-solid fa-palette"></i>
+      <i class="fa-brands fa-instagram"></i>
+
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Gallery</a></li>
+          <li><a href="#">Skills</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-text">
+          <h1>I'm a Creative Artist</h1>
+
+          <p>I turn ideas and emotions into visual art.</p>
+
+          <button onclick="showMessage()">View Gallery</button>
+        </div>
+        <div class="burger" onclick="toggleMenu()">☰</div>
+
+        <div class="hero-image">
+          <img src="./img/da37a7994ab0c51f78accb94a0c30621313a2a62149a86284ed17d17e0318d0a.webp" />
+        </div>
+      </section>
+      <section class="about">
+        <div class="about-image">
+          <img src="./img/images.jpg" />
+        </div>
+
+        <div class="about-text">
+          <h2>About Me</h2>
+
+          <p>I love painting and digital art.</p>
+        </div>
+      </section>
+      <section class="gallery">
+        <h2>My Recent Works</h2>
+
+        <div class="gallery-container">
+          <div class="card">
+            <img src="./img/images (2).jpg" />
+          </div>
+
+          <div class="card">
+            <img src="./img/images (1).jpg" />
+          </div>
+
+          <div class="card">
+            <img src="./img/hisham-bharoocha-600.jpg" />
+          </div>
+        </div>
+      </section>
+      <section class="skills">
+        <div class="skill-box">Painting</div>
+
+        <div class="skill-box">Digital Art</div>
+
+        <div class="skill-box">Graphic Design</div>
+
+        <div class="skill-box">Photography</div>
+      </section>
+      <section class="contact">
+        <h2>Contact Me</h2>
+
+        <form>
+          <input type="text" placeholder="Your Name" />
+
+          <input type="email" placeholder="Email" />
+
+          <textarea></textarea>
+
+          <button>Send Message</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>© 2026 Artena</p>
+    </footer>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>

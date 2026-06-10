@@ -1,0 +1,11 @@
+<svg width="220" height="60" viewBox="0 0 220 60" xmlns="http://www.w3.org/2000/svg">
+
+  <circle cx="30" cy="30" r="18" fill="#C49A6C"></circle>
+
+  <path d="M30 18 L40 42 L34 42 L31 35 L21 35 L18 42 L12 42 Z" fill="white"></path>
+
+  <text x="60" y="38" font-family="Georgia" font-size="28" fill="#222222" font-weight="bold">
+    ARTENA
+  </text>
+
+</svg>
