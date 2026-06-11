@@ -43,8 +43,12 @@ body {
     right: 30px;
   }
   .nav-links {
-    display: none; /* მენიუს ლინკები იმალება */
+    display: none;
   }
+}
+.active {
+  color: #c49a6c;
+  font-weight: bold;
 }
 
 /* HEADER */
@@ -276,5 +280,117 @@ footer {
 @media (max-width: 320px) {
   body {
     padding: 10px;
+  }
+}
+/* gallery */
+
+.gallery-page {
+  padding-top: 140px;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-bottom: 80px;
+
+  text-align: center;
+}
+
+.gallery-page h1 {
+  margin-bottom: 15px;
+}
+
+.gallery-page p {
+  margin-bottom: 40px;
+}
+
+.gallery-container {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 20px;
+}
+
+.gallery-container img {
+  width: 100%;
+  border-radius: 10px;
+
+  transition: 0.3s;
+}
+
+.gallery-container img:hover {
+  transform: scale(1.05);
+}
+@media (max-width: 768px) {
+  .gallery-container {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-page {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+.about-page {
+  padding-top: 140px;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-bottom: 80px;
+
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.about-image {
+  width: 50%;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.about-text {
+  width: 50%;
+}
+
+.about-text h1 {
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  margin-bottom: 15px;
+  line-height: 1.8;
+}
+
+.contact-page {
+  padding-top: 140px;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-bottom: 80px;
+
+  text-align: center;
+}
+
+.contact-page h1 {
+  margin-bottom: 15px;
+}
+
+.address {
+  margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+  .about-page {
+    flex-direction: column;
+  }
+
+  .about-image,
+  .about-text {
+    width: 100%;
+  }
+
+  .contact-page {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
