@@ -10,22 +10,36 @@ button:hover {
 button {
   transition: 0.3s;
 }
-@media (max-width: 768px) {
-  .hero {
-    flex-direction: column;
-  }
-
-  .gallery-container {
-    flex-direction: column;
-  }
-}
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+.header {
+  position: fixed;
 
+  top: 0;
+
+  left: 0;
+
+  width: 100%;
+
+  background-color: #f8f7f4;
+
+  z-index: 1000;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  padding: 20px 80px;
+}
+main {
+  margin-top: 100px;
+}
 body {
   font-family: Arial, sans-serif;
   background-color: #f8f7f4;
@@ -33,6 +47,7 @@ body {
 }
 .burger {
   display: none;
+  font-size: 32px;
   cursor: pointer;
 }
 @media screen and (max-width: 768px) {
@@ -182,22 +197,6 @@ nav a {
   transform: scale(1.05);
 }
 
-/* SKILLS */
-
-.skills {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  padding: 80px;
-}
-
-.skill-box {
-  width: 220px;
-  background: white;
-  padding: 25px;
-  text-align: center;
-  border-radius: 10px;
-}
 @media (max-width: 768px) {
   nav {
     display: none;
