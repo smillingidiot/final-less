@@ -68,14 +68,9 @@ button {
   position: fixed;
 
   top: 0;
-
   left: 0;
 
   width: 100%;
-
-  background-color: #f8f7f4;
-
-  z-index: 1000;
 
   display: flex;
 
@@ -83,10 +78,16 @@ button {
 
   align-items: center;
 
-  padding: 20px 80px;
+  padding: 10px 45px;
+
+  background: rgba(248, 245, 241, 0.96);
+
+  backdrop-filter: blur(8px);
+
+  z-index: 1000;
 }
 main {
-  margin-top: 100px;
+  margin-top: 75px;
 }
 body {
   font-family: Arial, sans-serif;
@@ -257,33 +258,89 @@ nav a {
 
 /* ABOUT */
 
-.about {
+.about-page {
   display: flex;
+
+  flex-direction: row;
+
+  justify-content: space-between;
+
   align-items: center;
+
   gap: 50px;
-  padding: 80px;
-}
 
+  padding: 40px 80px 80px;
+}
+.about-text {
+  flex: 1;
+
+  max-width: 550px;
+}
 .about-image {
-  width: 50%;
-}
+  flex: 1;
 
+  display: flex;
+
+  justify-content: flex-end;
+}
 .about-image img {
   width: 100%;
-}
 
-.about-text {
-  width: 50%;
-}
+  max-width: 380px;
 
-.about-text h2 {
-  margin-bottom: 20px;
-  font-size: 40px;
-}
+  border-radius: 25px;
 
+  object-fit: cover;
+
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+}
+.about-tag {
+  display: inline-block;
+
+  padding: 6px 14px;
+
+  background: #e8e1d8;
+
+  color: #c49a6c;
+
+  border-radius: 20px;
+
+  font-size: 12px;
+
+  width: auto;
+
+  margin-bottom: 15px;
+}
+.about-text h1 {
+  font-family: "Cormorant Garamond", serif;
+
+  font-size: 70px;
+
+  line-height: 1.1;
+
+  margin-bottom: 25px;
+
+  color: #222;
+}
 .about-text p {
-  line-height: 1.8;
-  color: gray;
+  font-size: 18px;
+
+  line-height: 1.9;
+
+  color: #666;
+
+  margin-bottom: 15px;
+}
+.about-image img {
+  width: 100%;
+
+  max-width: 420px;
+
+  border-radius: 25px;
+
+  object-fit: cover;
+
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
 }
 
 /* GALLERY */
@@ -340,7 +397,89 @@ nav a {
 }
 
 /* CONTACT */
+/* CONTACT PAGE */
 
+.contact-page {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  gap: 70px;
+
+  min-height: 70vh;
+
+  padding: 40px 80px 80px;
+}
+
+.contact-left {
+  flex: 1;
+}
+
+.contact-right {
+  flex: 1;
+}
+
+.contact-tag {
+  display: inline-block;
+
+  padding: 8px 18px;
+
+  border-radius: 30px;
+
+  background: #e8e1d8;
+
+  color: #c49a6c;
+
+  margin-bottom: 20px;
+
+  font-size: 14px;
+
+  font-weight: 600;
+}
+
+.contact-left h1 {
+  font-family: "Cormorant Garamond", serif;
+
+  font-size: 72px;
+
+  line-height: 1.1;
+
+  margin-bottom: 25px;
+
+  color: #222;
+}
+
+.address {
+  font-size: 24px;
+
+  margin-bottom: 25px;
+
+  color: #444;
+}
+
+.contact-description {
+  font-size: 18px;
+
+  line-height: 1.8;
+
+  max-width: 500px;
+
+  color: #666;
+}
+
+.contact-right iframe {
+  width: 100%;
+
+  height: 350px;
+
+  border: none;
+
+  border-radius: 25px;
+
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+}
 .contact {
   padding: 80px;
 }
@@ -430,7 +569,6 @@ footer h3 {
   transition: 0.3s;
 }
 
-
 .footer-socials i {
   font-size: 24px;
 }
@@ -459,15 +597,35 @@ footer h3 {
 }
 /* gallery */
 .gallery-container {
-  display: grid;
+  max-width: 700px;
 
-  grid-template-columns: repeat(3, 1fr);
+  margin: 0 auto 60px;
 
-  gap: 25px;
+  text-align: center;
 
-  max-width: 1200px;
+  padding: 40px;
 
-  margin: 0 auto;
+  background: linear-gradient(135deg, #f2ece6, #faf8f5);
+
+  border-radius: 30px;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.gallery-title h2 {
+  font-family: "Cormorant Garamond", serif;
+
+  font-size: 60px;
+
+  margin-bottom: 15px;
+
+  color: #222;
+}
+
+.gallery-title p {
+  font-size: 18px;
+
+  color: #666;
 }
 
 .gallery-container img {
@@ -492,14 +650,7 @@ footer h3 {
     grid-template-columns: 1fr;
   }
 }
-.gallery-page {
-  padding-top: 100px;
-  padding-left: 80px;
-  padding-right: 80px;
-  padding-bottom: 80px;
 
-  text-align: center;
-}
 .gallery {
   background: #f8f5f1;
 }
@@ -562,16 +713,6 @@ footer h3 {
     padding-right: 20px;
   }
 }
-.about-page {
-  padding-top: 140px;
-  padding-left: 80px;
-  padding-right: 80px;
-  padding-bottom: 80px;
-
-  display: flex;
-  align-items: center;
-  gap: 50px;
-}
 
 .about-image {
   width: 50%;
@@ -593,15 +734,6 @@ footer h3 {
 .about-text p {
   margin-bottom: 15px;
   line-height: 1.8;
-}
-
-.contact-page {
-  padding-top: 140px;
-  padding-left: 80px;
-  padding-right: 80px;
-  padding-bottom: 80px;
-
-  text-align: center;
 }
 
 .contact-page h1 {
@@ -632,9 +764,17 @@ iframe {
     padding-right: 20px;
   }
 }
-.about-page,
 
-.about-tag,
+.gallery-page,
+.contact-page {
+  padding-top: 20px;
+
+  padding-bottom: 80px;
+
+  padding-left: 80px;
+
+  padding-right: 80px;
+}
 
 /* SKILLS SECTION */
 
@@ -745,5 +885,24 @@ iframe {
 @media (max-width: 480px) {
   .hero-overlay h1 {
     font-size: 42px;
+  }
+}
+@media (max-width: 768px) {
+  .contact-page {
+    flex-direction: column;
+
+    padding: 20px;
+  }
+
+  .contact-left {
+    text-align: center;
+  }
+
+  .contact-left h1 {
+    font-size: 48px;
+  }
+
+  .address {
+    font-size: 20px;
   }
 }
